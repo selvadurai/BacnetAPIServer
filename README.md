@@ -21,6 +21,28 @@ Java 1.8 or higher
 
 Node.js 20.11.1
 
+
+Installation Instructions
+--
+
+**Java Installation Instructions**
+
+     sudo apt install default-jdk
+
+**Node.js Installation Instructions**
+
+      sudo apt update
+
+      sudo apt install curl 
+     
+      curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+     
+      source ~/.bashrc   
+     
+      nvm install "20.11.1"
+
+
+
  
 Download Link
 --
