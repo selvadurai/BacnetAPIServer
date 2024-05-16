@@ -25,11 +25,11 @@ Node.js 20.11.1
 Installation Instructions
 --
 
-**Java Installation Instructions**
+**Java Installation**
 
      sudo apt install default-jdk
 
-**Node.js Installation Instructions**
+**Node.js Installation**
 
       sudo apt update
 
