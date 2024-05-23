@@ -90,7 +90,7 @@ Installation Instructions
              Type=simple
              Restart=always
              RestartSec=1
-             ExecStart=/opt/BacApiServer-0.0.11/bin/startServer.sh
+             ExecStart=bash /opt/BacApiServer-0.0.11/bin/startServer.sh
              
              [Install]
              WantedBy=multi-user.target
