@@ -22,7 +22,7 @@ Java 1.8 or higher
 Node.js 20.11.1
 
 
-Installation Instructions
+How to Install Java and Node.js
 --
 
 **Java Installation**
@@ -40,6 +40,29 @@ Installation Instructions
       source ~/.bashrc   
      
       nvm install "20.11.1"
+
+ 
+Installation Instructions
+--
+1. Download BacnetAPI Server from the Download Link
+
+2. Put the "BacAPIServer<version>.zip" file in the /opt directory
+
+    Example how to move the zip file.
+   
+       sudo mv BacApiServer-0.0.11.zip /opt/BacApiServer-0.0.11.zip
+
+    File must listed in the opt directory when you type the following command
+
+        ls /opt
+        
+
+
+            
+     
+4. unzip it.
+   
+
 
 
 
