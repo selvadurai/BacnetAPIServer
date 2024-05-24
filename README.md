@@ -152,7 +152,7 @@ Installation Instructions
       sudo ufw allow  1880
 
    
-   3.) 3000
+    3.) 3000
 
       sudo ufw allow  3000
 
