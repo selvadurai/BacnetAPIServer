@@ -134,7 +134,30 @@ Installation Instructions
      
          sudo systemctl start bacnetWebAPIPortal.service
 
+ 8.Open the following ports
 
+    1.)7007
+
+       sudo ufw allow  7007
+
+   
+    2.) 1880
+
+      sudo ufw allow  1880
+
+   
+   3.) 3000
+
+      sudo ufw allow  3000
+
+ 10. Type <server ip address>:3000 or localhost:3000(Only Applies if your on the server) in your browser. The bacnetAPI Web Portal will Appear
+
+     ![image](https://github.com/selvadurai/BacnetAPIServer/assets/4705770/d9a731a9-b259-46d4-b32b-c0abfebfe404)
+
+         
+
+
+   
  
      
    
