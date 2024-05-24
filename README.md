@@ -22,7 +22,7 @@ Java 1.8 or higher
 Node.js 20.11.1
 
 
-How to Install Java and Node.js
+How to Install Java,Node.js and NodeRed
 --
 
 **Java Installation**
@@ -41,6 +41,12 @@ How to Install Java and Node.js
      
       nvm install "20.11.1"
 
+ **NodeRED Installation**     
+
+ https://nodered.org/docs/getting-started/raspberrypi     
+
+
+ 
  
 Installation Instructions
 --
