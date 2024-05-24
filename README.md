@@ -73,61 +73,71 @@ Installation Instructions
 5. Creating System D Service
 
    
-      Use any text edit to create the bacnetAPIServer.service
+      Use any text edit to create the bacnetAPIServer.service and bacnetWebAPIPortal.service
 
-      Command example
+       1). Create bacnetAPIServer.service
+
+             Command example
+         
+                     sudo vim /etc/systemd/system/bacnetAPIServer.service
    
-              sudo vim /etc/systemd/system/bacnetAPIServer.service
-
-       
-    bacnetAPIServer.service
-
-             [Unit]
-             Description=Bacnet API Backend Server
-             After=network.target
-             StartLimitIntervalSec=0
-             [Service]
-             Type=simple
-             Restart=always
-             RestartSec=1
-             ExecStart=bash /opt/BacApiServer-0.0.11/bin/startServer.sh
-             
-             [Install]
-             WantedBy=multi-user.target
-
-  
-  Command Example
-
-          sudo vim /etc/systemd/system/bacnetWebAPIPortal.service
-  
-  bacnetWebAPIPortal.service
-  
-            [Unit]
-            Description=Bacnet API Web Portal
-            After=network.target
-            StartLimitIntervalSec=0
-            [Service]
-            Type=simple
-            Restart=always
-            RestartSec=1
-            ExecStart=bash /opt/BacApiServer-0.0.11/bin/startPortal.sh
-                        
-            [Install]
-            WantedBy=multi-user.target
-                         
-
-   Restart Services
-
-            sudo systemctl daemon-reload
-
+          
+              bacnetAPIServer.service
    
+                     [Unit]
+                     Description=Bacnet API Backend Server
+                     After=network.target
+                     StartLimitIntervalSec=0
+                     [Service]
+                     Type=simple
+                     Restart=always
+                     RestartSec=1
+                     ExecStart=bash /opt/BacApiServer-0.0.11/bin/startServer.sh
+                     
+                     [Install]
+                     WantedBy=multi-user.target
+
+      2). Create bacnetWebAPIPortal.service
+
+           Command Example
+        
+                     sudo vim /etc/systemd/system/bacnetWebAPIPortal.service
+        
+           bacnetWebAPIPortal.service
+          
+                     [Unit]
+                     Description=Bacnet API Web Portal
+                     After=network.target
+                     StartLimitIntervalSec=0
+                     [Service]
+                     Type=simple
+                     Restart=always
+                     RestartSec=1
+                     ExecStart=bash /opt/BacApiServer-0.0.11/bin/startPortal.sh
+                                 
+                     [Install]
+                     WantedBy=multi-user.target
+                                
+  
+  6. Restart Services
+  
+           sudo systemctl daemon-reload
+
+
+  7. Start  bacnetAPIServer.service and  bacnetWebAPIPortal.service
+
+     Command to start bacnetAPIServer.service
+     
+         sudo systemctl start bacnetAPIServer.service
+
+     Command to start bacnetWebAPIPortal.service
+     
+         sudo systemctl start bacnetWebAPIPortal.service
+
+
+ 
      
    
-
-
-
-
-
  
 Download Link
 --
