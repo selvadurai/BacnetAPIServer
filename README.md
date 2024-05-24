@@ -95,10 +95,13 @@ Installation Instructions
              [Install]
              WantedBy=multi-user.target
 
+  
+  Command Example
 
-            sudo systemctl daemon-reload
-
-
+          sudo vim /etc/systemd/system/bacnetWebAPIPortal.service
+  
+  bacnetWebAPIPortal.service
+  
             [Unit]
             Description=Bacnet API Web Portal
             After=network.target
@@ -110,10 +113,14 @@ Installation Instructions
             ExecStart=bash /opt/BacApiServer-0.0.11/bin/startPortal.sh
                         
             [Install]
- WantedBy=multi-user.target
-~                          
+            WantedBy=multi-user.target
+                         
 
+   Restart Services
 
+            sudo systemctl daemon-reload
+
+   
      
    
 
@@ -124,5 +131,6 @@ Installation Instructions
  
 Download Link
 --
-https://drive.google.com/file/d/1Vg6xusan1ztSH0ts45toZBwSYi06rCPH/view?usp=sharing
+BacApiServer-0.0.11.zip
 
+https://drive.google.com/file/d/1V-In7nlw6GGJLJT-UecnDE5Iok7yl8cu/view?usp=sharing
