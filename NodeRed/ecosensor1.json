@@ -1,0 +1,155 @@
+[
+    {
+        "id": "633d42b393a99954",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "13cc193c4e6e10aa",
+        "type": "comment",
+        "z": "633d42b393a99954",
+        "name": "Pulls From API Server",
+        "info": "",
+        "x": 300,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "3840bfe6368b166e",
+        "type": "json",
+        "z": "633d42b393a99954",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [
+                "995d82ebba760c6d"
+            ]
+        ]
+    },
+    {
+        "id": "fc393094a2594df7",
+        "type": "function",
+        "z": "633d42b393a99954",
+        "name": "function 1",
+        "func": "const sensor={ temp:23,hum:51,occ:true};\nmsg.payload=JSON.stringify(sensor);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 100,
+        "wires": [
+            [
+                "3840bfe6368b166e"
+            ]
+        ]
+    },
+    {
+        "id": "84a6e73325788966",
+        "type": "inject",
+        "z": "633d42b393a99954",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "88",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "fc393094a2594df7"
+            ]
+        ]
+    },
+    {
+        "id": "11c930adee02a39b",
+        "type": "comment",
+        "z": "633d42b393a99954",
+        "name": "converts to JSON format",
+        "info": "",
+        "x": 490,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0c1f13ece676c18d",
+        "type": "comment",
+        "z": "633d42b393a99954",
+        "name": "Sends the JSON Data to BacnetAPIServer",
+        "info": "",
+        "x": 760,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "8e8b5f8397eeae0b",
+        "type": "comment",
+        "z": "633d42b393a99954",
+        "name": "Set Interval time to pull from API server ",
+        "info": "",
+        "x": 150,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "995d82ebba760c6d",
+        "type": "http request",
+        "z": "633d42b393a99954",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:7007/device/EcoSensor1?token=39cfd7cc742",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 630,
+        "y": 100,
+        "wires": [
+            [
+                "44952bd48c7297be"
+            ]
+        ]
+    },
+    {
+        "id": "44952bd48c7297be",
+        "type": "debug",
+        "z": "633d42b393a99954",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 180,
+        "wires": []
+    }
+]
