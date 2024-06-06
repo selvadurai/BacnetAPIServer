@@ -56,6 +56,9 @@ How to Install Java,Node.js and NodeRed
  https://nodered.org/docs/getting-started/raspberrypi     
 
 
+**Credentials for BacnetWeb Portal**
+
+  Default username:admin and password:admin
  
  
 Installation Instructions
