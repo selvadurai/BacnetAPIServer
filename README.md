@@ -188,9 +188,6 @@ How to Create Bacnet Service in a nutshell:
 
 BacnetWebPortal Screenshots:
 --
-![image](https://github.com/selvadurai/BacnetAPIServer/assets/4705770/5a38a657-c39b-4bad-889a-7787bf3b5b47)
-
-
 
 ![image](https://github.com/selvadurai/BacnetAPIServer/assets/4705770/dee77390-24e2-4727-bc6b-bb3c72907421)
 
