@@ -183,10 +183,19 @@ How to Create Bacnet Service in a nutshell:
 ![image](https://github.com/selvadurai/BacnetAPIServer/assets/4705770/fba1caef-b5d3-45bf-8072-50b5812a86ab)
 
 
-![image](https://github.com/selvadurai/BacnetAPIServer/assets/4705770/ebe1c556-01fc-4b4c-a50f-7578b53aefb7)
 
-   
- 
+Developer Resources:
+--
+BacnetAPIServer leverages Java for its backend, utilizing the Javalin and Bacnet4J libraries. The frontend, known as BacnetWebPortal, is built with Vue.js
+
+BacnetAPIServer:
+
+https://github.com/selvadurai/BacnetServerAPI
+
+BacnetWebPortal:
+
+https://github.com/selvadurai/BacnetWebPortal
+
 Download Link
 --
 BacApiServer-0.0.11.zip
