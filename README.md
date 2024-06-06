@@ -6,6 +6,16 @@ Introduction
 
 BacnetAPIServer is an open-source tool that bridges the gap between REST APIs and BACnet systems. It seamlessly translates API calls into BACnet objects, making them readily available for building automation control. Designed to integrate with NodeRED, BacnetAPIServer simplifies the conversion of NodeRED logic into BACnet Objects, streamlining BACnet integration for developers.
 
+
+![image](https://github.com/selvadurai/BacnetAPIServer/assets/4705770/47bc5d81-6fa4-42bf-88e5-fc0ca2b1955b)
+
+
+
+
+
+
+
+
 Requirements
 --
 
